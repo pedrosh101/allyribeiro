@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-
+      <h1>test</h1>
       <div className="grid grid-cols-3 gap-4 p-4 mx-24">
         {illustrations.map((project) => (
           <ProjectCard

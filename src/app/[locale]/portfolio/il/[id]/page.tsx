@@ -9,7 +9,7 @@ interface ProjectPageProps {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { locale, id } = await params;
+  const { id } = await params;
   const project = illustrations.find((item) => item.id.toString() === id);
 
   if (!project) {

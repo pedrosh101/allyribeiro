@@ -1,25 +1,14 @@
 import Navbar from "@/components/Navbar";
-import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
-import { illustrations } from "@/app/data/il";
+import MainGrid from "@/components/MainGrid";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
-      <h1>test</h1>
-      <div className="grid grid-cols-3 gap-4 p-4 mx-24">
-        {illustrations.map((project) => (
-          <ProjectCard
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            caminho={project.caminho}
-            texto={project.texto}
-          />
-        ))}
+      <div className="flex justify-center">
+        <MainGrid />
       </div>
-
       <Footer />
     </>
   );

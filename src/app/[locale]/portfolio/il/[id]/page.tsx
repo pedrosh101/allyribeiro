@@ -1,4 +1,6 @@
 import { illustrations } from "@/app/data/il";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -7,32 +9,39 @@ interface ProjectPageProps {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { locale, id } = await params; // 🔥 Agora pegamos os params corretamente
-
-  // Encontrar o projeto pelo ID
+  const { locale, id } = await params;
   const project = illustrations.find((item) => item.id.toString() === id);
 
-  // Se o projeto não for encontrado, retorna um 404
   if (!project) {
     return notFound();
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6">
-      <h1 className="text-3xl font-bold">{project.title}</h1>
-      <Image
-        src={project.caminho}
-        alt={project.title}
-        width={600}
-        height={600}
-        className="my-4 object-cover"
-      />
-      <p className="text-lg text-gray-600">{project.texto}</p>
+    <>
+      <Navbar />
+      <div className="flex flex-col md:flex-row items-center justify-center p-6 ">
+        <div className="flex flex-col md:flex-row w-5/6">
+          <div className="w-full md:w-1/2 p-4">
+            <Image
+              src={project.caminho}
+              alt={project.title}
+              width={600}
+              height={600}
+              className="rounded-lg shadow-lg object-cover"
+            />
+          </div>
 
-      {/* Link de volta para a página inicial com o idioma correto */}
-      <a href={`/${locale}`} className="mt-4 text-blue-500 underline">
-        Voltar para Home
-      </a>
-    </div>
+          <div className="w-full md:w-1/2 p-4">
+            <h1 className="text-4xl font-semibold font-consola text-gray-800 mb-2">
+              {project.title}
+            </h1>
+            <p className="text-lg text-gray-800 font-semibold mb-4">{project.category}</p>
+            <p className="text-lg text-gray-600 mb-4">{project.texto}</p>
+
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }

@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dialog";
 
 interface ProjectPageProps {
-  params: { locale: string; id: string };
+  params: Promise<{ locale: string; id: string }>;
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {

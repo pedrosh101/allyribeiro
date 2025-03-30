@@ -169,18 +169,18 @@ export const illustrations = [
     category: "Illustration",
     gallery: [{ src: "/work/ILU9/1.jpg", caption: "Ally Ribeiro - Jackalope" }]
   },
-  {
-    id: 10,
-    title: "Passos",
-    caminho: "/work/ILU10/1.jpg",
-    texto: "Meu primeiro quadrinho de terror. Publicado pela Editora Skript em março de 2020 em 'Pândega', edição especial de terror.\nDesenhada, colorida e escrita por mim, utilizando o Procreate. Retratadas aqui: páginas 1 e 2 (de 4).",
-    text: "My first horror comic. Published by Editora Skript in March 2020 in 'Pândega', a special horror edition. Drawn, colored and written by me using Procreate.\nFeatured here: pages 1 and 2 (of 4).",
-    category: "Comics",
-    gallery: [
-      { src: "/work/ILU10/1.jpg", caption: "HQ Passos - Pag 1" },
-      { src: "/work/ILU10/2.jpg", caption: "HQ Passos - Pag 2" }
-    ]
-  },
+  // {
+  //   id: 10,
+  //   title: "Passos",
+  //   caminho: "/work/ILU10/1.jpg",
+  //   texto: "Meu primeiro quadrinho de terror. Publicado pela Editora Skript em março de 2020 em 'Pândega', edição especial de terror.\nDesenhada, colorida e escrita por mim, utilizando o Procreate. Retratadas aqui: páginas 1 e 2 (de 4).",
+  //   text: "My first horror comic. Published by Editora Skript in March 2020 in 'Pândega', a special horror edition. Drawn, colored and written by me using Procreate.\nFeatured here: pages 1 and 2 (of 4).",
+  //   category: "Comics",
+  //   gallery: [
+  //     { src: "/work/ILU10/1.jpg", caption: "HQ Passos - Pag 1" },
+  //     { src: "/work/ILU10/2.jpg", caption: "HQ Passos - Pag 2" }
+  //   ]
+  // },
   {
     id: 11,
     title: "The Lady from the Black Lagoon",

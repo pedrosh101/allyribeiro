@@ -7,6 +7,7 @@ interface ProjectCardProps {
   title: string;
   caminho: string;
   texto: string;
+  gallery?: { src: string; caption: string }[];
 }
 
 function ProjectCard({ id, title, caminho }: ProjectCardProps) {

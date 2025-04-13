@@ -27,7 +27,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center">
         <Link href="/">
-        <Image src={logo} alt="Logo" width={200} height={200} />
+        <Image src={logo} alt="Logo" width={230} height={230} />
         </Link>
       </div>
 
@@ -104,12 +104,12 @@ export default function Navbar() {
             <Instagram color="#895a2c" size={24} />
           </Link>
           <Link
-            href="https://lettersfromthehauntedforest.substack.com/"
+            href="https://pinterest.com/allyribeiroart/"
             target="_blank"
           >
             <FontAwesomeIcon icon={faPinterest} size="lg" color="#895a2c" />
           </Link>
-          <Link href="mailto:seuemail@example.com">
+          <Link href="mailto:allyribeiro.art@gmail.com">
             <Mail color="#895a2c" size={24} />
           </Link>
           <Link href="https://ko-fi.com/allyribeiro" target="_blank">

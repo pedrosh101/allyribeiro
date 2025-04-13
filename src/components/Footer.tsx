@@ -15,12 +15,12 @@ export default function Footer() {
             <Instagram color="#895a2c" size={28} />
           </Link>
           <Link
-            href="https://lettersfromthehauntedforest.substack.com/"
+            href="https://pinterest.com/allyribeiroart/"
             target="_blank"
           >
             <FontAwesomeIcon icon={faPinterest} size="xl" color="#895a2c" />
           </Link>
-          <Link href="mailto:seuemail@example.com">
+          <Link href="mailto:allyribeiro.art@gmail.com">
             <Mail color="#895a2c" size={28} />
           </Link>
           <Link

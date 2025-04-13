@@ -6,6 +6,7 @@ import React from "react";
 import about from "../../../../public/about.png";
 import div1 from "../../../../public/div1.png";
 import div2 from "../../../../public/div2.png";
+import div3 from "../../../../public/kofi.png";
 
 export default function About() {
   const t = useTranslations("about");
@@ -13,11 +14,11 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white flex flex-col lg:mx-28 p-8 text-clr1 font-imfell">
+      <main className="min-h-screen bg-white flex flex-col lg:mx-28 md:p-8 p-4 text-clr1 font-imfell">
         <div className="flex flex-col lg:flex-row gap-8 w-full">
-          <div className="lg:w-1/2">
-            <h1 className="text-3xl italic mb-6 text-center">{t("hi")}</h1>
-            <div className="border-4 border-clr1 p-8 flex flex-col lg:space-y-6 items-center justify-center text-xl">
+          <div className="lg:w-3/5">
+            <h1 className="text-3xl mb-6 text-center">{t("hi")}</h1>
+            <div className="p-8 flex flex-col lg:space-y-6 items-center justify-center font-consola text-base text-black">
               <div>
                 <p>{t("par0")}</p>
                 <p>{t("par1")}</p>
@@ -27,7 +28,7 @@ export default function About() {
               <p>{t("par4")}</p>
             </div>
           </div>
-          <div className="lg:w-1/2 bg-brown-800 flex items-center justify-center rounded-full text-xl">
+          <div className="lg:w-2/5 bg-brown-800 flex items-center rounded-full">
             <Image src={about} alt="about" width={500} height={500} />
           </div>
         </div>
@@ -37,13 +38,13 @@ export default function About() {
         </div>
 
         <div className="w-full mb-12">
-          <p className="italic text-3xl mb-6">{t("touch1")}</p>
-          <div className="border-4 text-center border-clr1 p-8 mt-2 text-2xl">
+          <p className="text-3xl mb-6">{t("touch1")}</p>
+          <div className="text-center p-8 mt-2 text-base font-consola text-black">
             <p className="lg:px-44">
               {t("touch2")}
               <a
                 href="mailto:allyribeiro.art@gmail.com"
-                className="text-lime-800"
+                className="text-clr1"
               >
                 allyribeiro.art@gmail.com
               </a>
@@ -52,10 +53,10 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-around w-full text-center text-lg mt-6">
+        <div className="flex flex-col lg:flex-row justify-around w-full text-sm md:space-x-12 md:space-y-0 space-y-4 mt-6">
           <div>
-            <h2 className="italic text-3xl">{t("pw0")}</h2>
-            <ul className="mt-2">
+            <h2 className="text-3xl">{t("pw0")}</h2>
+            <ul className="mt-2 font-consola text-black">
               <li>{t("pw1")}</li>
               <li>{t("pw2")}</li>
               <li>{t("pw3")}</li>
@@ -64,9 +65,11 @@ export default function About() {
               <li>{t("pw6")}</li>
             </ul>
           </div>
+          <div className="flex items-center">
+          <Image src={div3} alt="cafe" width={40} height={40} /></div>
           <div>
-            <h2 className="italic text-3xl">{t("ex0")}</h2>
-            <ul className="mt-2">
+            <h2 className="text-3xl">{t("ex0")}</h2>
+            <ul className="mt-2 font-consola text-black">
               <li>{t("ex1")}</li>
               <li>{t("ex2")}</li>
             </ul>
@@ -76,7 +79,7 @@ export default function About() {
           <Image src={div2} alt="about" width={700} height={700} />
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h2 className="italic mb-6 text-3xl">{t("ig")}</h2>
+          <h2 className="mb-6 text-3xl">{t("ig")}</h2>
           <div className="grid grid-cols-3 gap-4">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="w-24 h-24 bg-brown-800"></div>

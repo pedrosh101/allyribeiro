@@ -11,7 +11,7 @@ interface ProjectCardProps {
   gallery?: { src: string; caption: string }[];
 }
 
-function ProjectCard({ id, title, slug, caminho }: ProjectCardProps) {
+function ProjectCard({ title, slug, caminho }: ProjectCardProps) {
   const localeActive = useLocale();
 
   return (

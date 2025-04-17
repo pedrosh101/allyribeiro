@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from '@/i18n/routing';
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,19 +15,19 @@ import { useTranslations } from "next-intl";
 import LocalSwitcher from "./LanguageSwitcher";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPinterest } from "@fortawesome/free-brands-svg-icons";
-import kofi from "../../public/kofi.png"
+import { faPinterest, faBehance } from "@fortawesome/free-brands-svg-icons";
+import kofi from "../../public/kofi.png";
 
 export default function Navbar() {
   const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between p-8 bg-white mx-28 font-consola">
+    <nav className="flex justify-between p-8 bg-white md:mx-28 font-consola">
       {/* Logo */}
       <div className="flex items-center">
         <Link href="/">
-        <Image src={logo} alt="Logo" width={230} height={230} />
+          <Image src={logo} alt="Logo" width={230} height={230} />
         </Link>
       </div>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
       <div
         className={`${
           isOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center text-black absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 z-10 shadow md:shadow-none`}
+        } md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center text-black absolute md:static top-24 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 z-10 shadow md:shadow-none`}
       >
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -103,10 +103,10 @@ export default function Navbar() {
           <Link href="https://instagram.com/allyribeiroart" target="_blank">
             <Instagram color="#895a2c" size={24} />
           </Link>
-          <Link
-            href="https://pinterest.com/allyribeiroart/"
-            target="_blank"
-          >
+          <Link href="https://www.behance.net/allyribeiro" target="_blank">
+            <FontAwesomeIcon icon={faBehance} size="lg" color="#895a2c" />
+          </Link>
+          <Link href="https://pinterest.com/allyribeiroart/" target="_blank">
             <FontAwesomeIcon icon={faPinterest} size="lg" color="#895a2c" />
           </Link>
           <Link href="mailto:allyribeiro.art@gmail.com">

@@ -5,12 +5,12 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 interface ProjectPageProps {
-  params: Promise<{ locale: string; id: string }>;
+  params: { locale: string; slug: string };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { id, locale } = await params;
-  const project = illustrations.find((item) => item.id.toString() === id);
+  const { slug, locale } = await params;
+  const project = illustrations.find((item) => item.slug === slug);
 
   if (!project) {
     return notFound();
@@ -23,7 +23,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="w-full max-w-5xl p-4">
 
 
-          <h1 className="text-4xl font-semibold font-imfell text-gray-800 mt-6 mb-4">
+          <h1 className="text-4xl font-semibold font-imfell text-clr1 mt-6 mb-4">
             {project.title}
           </h1>
 

@@ -1,26 +1,30 @@
 "use client";
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
-import { illustrations } from "@/app/data/il";
 import Masonry from "react-masonry-css";
+import { illustrations } from "@/app/data/il";
+import React from "react";
 
-export default function HomePage() {
+export default function About() {
   const breakpointColumnsObj = {
-    default: 3,
+    default: 4,
     1100: 2,
     700: 1,
   };
 
   return (
     <>
-      <div className="md:w-5/6 md:p-0 p-4">
+      <Navbar />
+      <main className="min-h-screen bg-white flex flex-col lg:mx-28 md:p-8 p-4 text-clr1 font-imfell">
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >
           {illustrations
-            .filter((project) => project.category !== "Comics")
+            .filter((project) => project.category == "Comics")
             .map((project) => (
               <ProjectCard
                 key={project.id}
@@ -32,7 +36,8 @@ export default function HomePage() {
               />
             ))}
         </Masonry>
-      </div>
+      </main>
+      <Footer />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Instagram, Mail } from "lucide-react";
 import kofi from "../../public/kofi.png";
-import { faPinterest } from "@fortawesome/free-brands-svg-icons";
+import { faPinterest, faBehance } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -13,6 +13,12 @@ export default function Footer() {
         <div className="flex justify-center space-x-6">
           <Link href="https://instagram.com/allyribeiroart" target="_blank">
             <Instagram color="#895a2c" size={28} />
+          </Link>
+          <Link
+            href="https://www.behance.net/allyribeiro"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faBehance} size="xl" color="#895a2c" />
           </Link>
           <Link
             href="https://pinterest.com/allyribeiroart/"

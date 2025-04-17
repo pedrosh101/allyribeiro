@@ -5,17 +5,18 @@ import { useLocale } from "next-intl";
 interface ProjectCardProps {
   id: number;
   title: string;
+  slug: string;
   caminho: string;
   texto: string;
   gallery?: { src: string; caption: string }[];
 }
 
-function ProjectCard({ id, title, caminho }: ProjectCardProps) {
+function ProjectCard({ id, title, slug, caminho }: ProjectCardProps) {
   const localeActive = useLocale();
 
   return (
     <Link 
-      href={`/${localeActive}/portfolio/il/${id}`} 
+      href={`/${localeActive}/portfolio/il/${slug}`} 
       className="flex flex-col items-center text-center mb-4"
     >
       <Image

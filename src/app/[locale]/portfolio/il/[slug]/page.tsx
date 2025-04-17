@@ -5,7 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 interface ProjectPageProps {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {

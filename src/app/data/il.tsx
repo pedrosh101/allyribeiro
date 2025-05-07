@@ -1,21 +1,5 @@
 export const illustrations = [
-  {
-    id: 1,
-    title: "Back from the Pumpkin Patch",
-    slug: "back-from-the-pumpkin-patch",
-    caminho: "/work/ILU1/1.jpg",
-    texto:
-      "Como é a vida de uma bruxa na fazenda? Essa é uma pergunta que eu quero responder há muito tempo, e das minhas indagações surgiu a personagem Rowan Moss. Ela é uma bruxa esforçada que tenta encontrar seu lugar no mundo e aprender a usar suas habilidades mágicas, ao mesmo tempo em que cultiva um pequeno pedaço de terra junto com seu travesso familiar Geraldo. Pretendo desenvolver a história de Rowan como um webcomic em um futuro próximo, mas enquanto isso decidi atualizar uma antiga ilustração dela - desta vez representando ela voltando de uma tarde de colheita no canteiro de abóboras local. Afinal, bruxas precisam de abóboras especiais para o Halloween! Pintura digital feita no Procreate.",
-    text: "What is life on the farm like for a witch? That's a question I've been wanting to answer for a long time, and from my wonderings the character Rowan Moss came to life. She is a hardworking witch trying to find her place in the world and to learn how to use her magical abilities, all while working a small patch of land along her mischievous familiar Geraldo.I intend to develop Rowan's story as a webcomic in the near future, but meanwhile I decided to update an old illustration of hers - this time she is coming back from a harvesting afternoon at the local pumpkin patch. After all, witches need special gourds for Halloween! Digital painting made in Procreate.",
-    category: "Illustration",
-    gallery: [
-      { src: "/work/ILU1/1.jpg", caption: "Back from the Pumpkin Patch Final" },
-      {
-        src: "/work/ILU1/2.jpg",
-        caption: "Sketch Back from the Pumpkin Patch Final",
-      },
-    ],
-  },
+
   {
     id: 2,
     title: "Coffee Alchemists - Pumpkin Spice",
@@ -117,7 +101,7 @@ export const illustrations = [
     texto:
       "Série de 12 ilustrações retratando diversas criaturas assustadoras do folclore natalino do mundo todo, publicadas diariamente no Instagram e Substack com descrições detalhadas de suas lendas de 25 de dezembro de 2024 a 6 de janeiro de 2025. Retratadas aqui: Mari Lwyd - Krampus - Victorian Ghost - Yule Lads - La Befana - Grýla. A série completa pode ser encontrada em @allyribeiroart Pinturas digitais feitas no Procreate.",
     text: "A series of 12 illustrations depicting various creepy Christmas folklore creatures from around the world, published daily on Instagram and Substack with detailed descriptions of their legends from December 25th 2024 to January 6th 2025. Featured here: Mari Lwyd - Krampus - Victorian Ghost - Yule Lads - La Befana - Grýla. The complete series can be found at @allyribeiroart Digital paintings made in Procreate.",
-    category: "Character Design",
+    category: "Illustration",
     gallery: [
       { src: "/work/ILU6/1.jpg", caption: "12 Days of Creepmas - Mari Lwyd" },
       {
@@ -227,8 +211,8 @@ export const illustrations = [
     gallery: [
       { src: "/work/ILU10/1.jpg", caption: "HQ Passos - Pag 1" },
       { src: "/work/ILU10/2.jpg", caption: "HQ Passos - Pag 2" },
-      { src: "/work/ILU10/3.jpg", caption: "HQ Passos - Pag 3" },
-      { src: "/work/ILU10/4.jpg", caption: "HQ Passos - Pag 4" },
+      // { src: "/work/ILU10/3.jpg", caption: "HQ Passos - Pag 3" },
+      // { src: "/work/ILU10/4.jpg", caption: "HQ Passos - Pag 4" },
     ],
   },
   {
@@ -248,6 +232,22 @@ export const illustrations = [
       },
     ],
   },
-
+  {
+    id: 1,
+    title: "Back from the Pumpkin Patch",
+    slug: "back-from-the-pumpkin-patch",
+    caminho: "/work/ILU1/1.jpg",
+    texto:
+      "Como é a vida de uma bruxa na fazenda? Essa é uma pergunta que eu quero responder há muito tempo, e das minhas indagações surgiu a personagem Rowan Moss. Ela é uma bruxa esforçada que tenta encontrar seu lugar no mundo e aprender a usar suas habilidades mágicas, ao mesmo tempo em que cultiva um pequeno pedaço de terra junto com seu travesso familiar Geraldo. Pretendo desenvolver a história de Rowan como um webcomic em um futuro próximo, mas enquanto isso decidi atualizar uma antiga ilustração dela - desta vez representando ela voltando de uma tarde de colheita no canteiro de abóboras local. Afinal, bruxas precisam de abóboras especiais para o Halloween! Pintura digital feita no Procreate.",
+    text: "What is life on the farm like for a witch? That's a question I've been wanting to answer for a long time, and from my wonderings the character Rowan Moss came to life. She is a hardworking witch trying to find her place in the world and to learn how to use her magical abilities, all while working a small patch of land along her mischievous familiar Geraldo.I intend to develop Rowan's story as a webcomic in the near future, but meanwhile I decided to update an old illustration of hers - this time she is coming back from a harvesting afternoon at the local pumpkin patch. After all, witches need special gourds for Halloween! Digital painting made in Procreate.",
+    category: "Illustration",
+    gallery: [
+      { src: "/work/ILU1/1.jpg", caption: "Back from the Pumpkin Patch Final" },
+      {
+        src: "/work/ILU1/2.jpg",
+        caption: "Sketch Back from the Pumpkin Patch Final",
+      },
+    ],
+  },
 
 ];

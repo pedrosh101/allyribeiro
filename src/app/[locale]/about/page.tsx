@@ -7,6 +7,10 @@ import about from "../../../../public/about.png";
 import div1 from "../../../../public/div1.png";
 import div2 from "../../../../public/div2.png";
 import div3 from "../../../../public/coffee.png";
+import ig1 from "../../../../public/ig/ig1.png";
+import ig2 from "../../../../public/ig/ig2.png";
+import ig3 from "../../../../public/ig/ig3.png";
+import Link from "next/link";
 
 export default function About() {
   const t = useTranslations("about");
@@ -60,8 +64,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-around w-full text-sm md:space-x-12 md:space-y-0 space-y-4 mt-6">
-          <div>
+        <div className="flex flex-col lg:flex-row justify-around w-full text-sm md:space-x-6 md:space-y-0 space-y-4 mt-6">
+          <div className="flex-1">
             <h2 className="text-3xl">{t("pw0")}</h2>
             <ul className="mt-4 font-consola text-black">
               <li>{formatObra(t("pw6"))}</li>
@@ -73,9 +77,9 @@ export default function About() {
             </ul>
           </div>
           <div className="flex items-center">
-            <Image src={div3} alt="cafe" width={120} height={120} />
+            <Image src={div3} alt="cafe" width={140} height={140} />
           </div>
-          <div>
+          <div className="flex-1">
             <h2 className="text-3xl">{t("ex0")}</h2>
             <ul className="mt-2 font-consola text-black">
               <li>{formatObra(t("ex1"))}</li>
@@ -88,10 +92,25 @@ export default function About() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <h2 className="mb-6 text-3xl">{t("ig")}</h2>
-          <div className="grid grid-cols-3 gap-4">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="w-24 h-24 bg-brown-800"></div>
-            ))}
+          <div className="md:grid md:grid-cols-3 gap-4">
+            <Link
+              href="https://www.instagram.com/p/DHbOfqsIGPb/"
+              target="_blank"
+            >
+              <Image src={ig1} alt="about" width={400} height={400} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/p/DGik8pEsAZX/"
+              target="_blank"
+            >
+              <Image src={ig2} alt="about" width={400} height={400} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/p/DHqrNODMWyL/"
+              target="_blank"
+            >
+              <Image src={ig3} alt="about" width={400} height={400} />
+            </Link>
           </div>
         </div>
       </main>

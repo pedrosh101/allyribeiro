@@ -1,5 +1,4 @@
 export const illustrations = [
-
   {
     id: 2,
     title: "Coffee Alchemists - Pumpkin Spice",
@@ -92,7 +91,6 @@ export const illustrations = [
     ],
   },
 
-
   {
     id: 6,
     title: "12 Days of Creepmas",
@@ -161,6 +159,41 @@ export const illustrations = [
     ],
   },
   {
+    id: 9,
+    title: "Jackalope",
+    slug: "jackalope",
+    caminho: "/work/ILU9/1.jpg",
+    texto:
+      "O Jackalope é um animal mítico do folclore norte-americano, descrito como um coelho com chifres de antílope. Embora existam muitas variações da lenda, sua aparência incomum o torna um assunto muito interessante para pintura. Nesta ilustração, representei um Jackalope entre vários elementos naturais e mágicos, como um pequeno tributo às suas histórias inventivas e misteriosas.\nPintura digital feita no Procreate.",
+    text: "The Jackalope is a mythical animal from North American folklore, described as a jackrabbit with antelope horns. Even though there are many variations to the legend, its unusual appearance makes it a very interesting subject for painting. In this illustration, I wanted to depict a Jackalope among several natural and magical elements, as a small tribute to its inventive and mysterious stories.\nDigital painting made in Procreate.",
+    category: "Illustration",
+    gallery: [{ src: "/work/ILU9/1.jpg", caption: "Ally Ribeiro - Jackalope" }],
+  },
+  {
+    id: 13,
+    title: "Lendo Terror - Postcards",
+    slug: "lendo-terror",
+    caminho: "/work/ILU13/1.jpg",
+    texto:
+      "Série de cartões postais criada para o Lendo Terror - Porta Secreta (link projeto LT no Catarse), um projeto em andamento no Catarse criado por Jéssica Louise Werner. A cada mês de 2025, os membros deste clube literário de terror receberão cartões postais com fantasmas em diferentes situações.\nRetratados aqui: cartões postais de abril, fevereiro e maio. Pinturas digitais feitas no Procreate.",
+    text: "Series of postcards created for Lendo Terror - Porta Secreta, an ongoing Catarse project created by Jéssica Louise Werner. For every month of 2025, the members of this horror literary club will receive postcards featuring ghosts in different situations.\nFeatured here: April, February and May postcards. Digital paintings made in Procreate.",
+    category: "Illustration",
+    gallery: [
+      {
+        src: "/work/ILU13/1.jpg",
+        caption: "",
+      },
+      {
+        src: "/work/ILU13/2.jpg",
+        caption: "",
+      },
+      {
+        src: "/work/ILU13/3.jpg",
+        caption: "",
+      },
+    ],
+  },
+  {
     id: 8,
     title: "Sessão da Meia-Noite",
     slug: "sessao-da-meia-noite",
@@ -189,16 +222,23 @@ export const illustrations = [
     ],
   },
   {
-    id: 9,
-    title: "Jackalope",
-    slug: "jackalope",
-    caminho: "/work/ILU9/1.jpg",
+    id: 11,
+    title: "The Lady from the Black Lagoon",
+    slug: "the-lady-from-the-black-lagoon",
+    caminho: "/work/ILU11/1.jpg",
     texto:
-      "O Jackalope é um animal mítico do folclore norte-americano, descrito como um coelho com chifres de antílope. Embora existam muitas variações da lenda, sua aparência incomum o torna um assunto muito interessante para pintura. Nesta ilustração, representei um Jackalope entre vários elementos naturais e mágicos, como um pequeno tributo às suas histórias inventivas e misteriosas.\nPintura digital feita no Procreate.",
-    text: "The Jackalope is a mythical animal from North American folklore, described as a jackrabbit with antelope horns. Even though there are many variations to the legend, its unusual appearance makes it a very interesting subject for painting. In this illustration, I wanted to depict a Jackalope among several natural and magical elements, as a small tribute to its inventive and mysterious stories.\nDigital painting made in Procreate.",
+      "Sou fã dos filmes de monstros da Universal há muito tempo. Quando descobri a história de Milicent Patrick e a maneira como ela quase foi apagada da história de Hollywood, embora tenha criado um dos designs de monstros mais icônicos de todos os tempos, soube que queria prestar homenagem a essa artista incrível com uma ilustração.\nUma print desta arte foi sorteada em parceria com a editora Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) através do meu perfil do Instagram no Halloween de 2022.\nPintura digital feita no Procreate.",
+    text: "I've been a fan of the Universal monster movies for most of my life. When I learned about Milicent Patrick's story and the way she was almost erased from Hollywood history although she had created one of the most iconic monster designs of all time, I knew I wanted to pay homage to this amazing artist with an illustration.\nA print of this artwork was raffled in partnership with publisher Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) through my Instagram profile on Halloween 2022.\nDigital painting made in Procreate.",
     category: "Illustration",
-    gallery: [{ src: "/work/ILU9/1.jpg", caption: "Ally Ribeiro - Jackalope" }],
+    gallery: [
+      { src: "/work/ILU11/1.jpg", caption: "Lady from the Black Lagoon" },
+      {
+        src: "/work/ILU11/2.png",
+        caption: "Lady from the Black Lagoon Sketch",
+      },
+    ],
   },
+
   {
     id: 10,
     title: "Passos",
@@ -215,20 +255,21 @@ export const illustrations = [
       // { src: "/work/ILU10/4.jpg", caption: "HQ Passos - Pag 4" },
     ],
   },
+
   {
-    id: 11,
-    title: "The Lady from the Black Lagoon",
-    slug: "the-lady-from-the-black-lagoon",
-    caminho: "/work/ILU11/1.jpg",
+    id: 14,
+    title: "Shellshock",
+    slug: "Shellshock",
+    caminho: "/work/ILU14/1.jpg",
     texto:
-      "Sou fã dos filmes de monstros da Universal há muito tempo. Quando descobri a história de Milicent Patrick e a maneira como ela quase foi apagada da história de Hollywood, embora tenha criado um dos designs de monstros mais icônicos de todos os tempos, soube que queria prestar homenagem a essa artista incrível com uma ilustração.\nUma print desta arte foi sorteada em parceria com a editora Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) através do meu perfil do Instagram no Halloween de 2022.\nPintura digital feita no Procreate.",
-    text: "I've been a fan of the Universal monster movies for most of my life. When I learned about Milicent Patrick's story and the way she was almost erased from Hollywood history although she had created one of the most iconic monster designs of all time, I knew I wanted to pay homage to this amazing artist with an illustration.\nA print of this artwork was raffled in partnership with publisher Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) through my Instagram profile on Halloween 2022.\nDigital painting made in Procreate.",
-    category: "Illustration",
+      "Quadrinhos criados para a edição “Crônicas de 2020”, publicada pela Skript Editora em 2022. \nDesenhada, colorida e escrita por mim, utilizando o Procreate. Retratadas aqui: páginas 1 e 2 (de 4)",
+    text: "Comic created for “Crônicas de 2020”, published by Skript Editora in 2022. \nDrawn, colored and written by me using Procreate. Featured here: pages 1 and 2 (of 4)",
+    category: "Comics",
     gallery: [
-      { src: "/work/ILU11/1.jpg", caption: "Lady from the Black Lagoon" },
+      { src: "/work/ILU14/1.jpg", caption: "" },
       {
-        src: "/work/ILU11/2.png",
-        caption: "Lady from the Black Lagoon Sketch",
+        src: "/work/ILU14/2.jpg",
+        caption: "",
       },
     ],
   },
@@ -249,5 +290,4 @@ export const illustrations = [
       },
     ],
   },
-
 ];

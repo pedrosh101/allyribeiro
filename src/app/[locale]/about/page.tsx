@@ -70,8 +70,8 @@ export default function About() {
             <ul className="mt-4 font-consola text-black">
               <li>{formatObra(t("pw6"))}</li>
               <li>{formatObra(t("pw5"))}</li>
-              <li>{formatObra(t("pw4"))}</li>
               <li>{formatObra(t("pw3"))}</li>
+              <li>{formatObra(t("pw4"))}</li>
               <li>{formatObra(t("pw2"))}</li>
               <li>{formatObra(t("pw1"))}</li>
             </ul>

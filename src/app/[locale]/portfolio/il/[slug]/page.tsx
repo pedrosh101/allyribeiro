@@ -12,6 +12,50 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug, locale } = await params;
   const project = illustrations.find((item) => item.slug === slug);
 
+  type LinkMap = Record<string, string>;
+
+  function formatRichText(text: string, id: number): any {
+    const baseLinks: LinkMap = {
+      "@allyribeiroart": "https://www.instagram.com/allyribeiroart",
+      "Darkside Books": "https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1",
+      "Lendo Terror - Porta Secreta": "https://www.catarse.me/shortstories",
+    };
+
+    if (id === 8) {
+      baseLinks["Substack"] =
+        "https://lettersfromthehauntedforest.substack.com/p/sessao-da-meia-noite-midnight-session";
+    }
+
+    const entries = Object.entries(baseLinks);
+    entries.sort((a, b) => b[0].length - a[0].length);
+
+    const regex = new RegExp(
+      `(${entries
+        .map(([key]) => key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+        .join("|")})`,
+      "g"
+    );
+    const parts = text.split(regex);
+
+    return parts.map((part, i) => {
+      const link = baseLinks[part];
+      if (link) {
+        return (
+          <a
+            key={i}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-clr1 underline"
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  }
+
   if (!project) {
     return notFound();
   }
@@ -21,14 +65,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <Navbar />
       <div className="flex flex-col items-center justify-center p-6">
         <div className="w-full max-w-5xl p-4">
-
-
           <h1 className="text-4xl font-semibold font-imfell text-clr1 mt-6 mb-4">
             {project.title}
           </h1>
 
           <p className="text-sm text-gray-600 font-consola mb-8">
-            {locale === "en" ? project.text : project.texto}
+            {formatRichText(
+              locale === "en" ? project.text : project.texto,
+              project.id
+            )}
           </p>
 
           {project.gallery && project.gallery.length > 0 && (
@@ -48,11 +93,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       height={800}
                       className="rounded-lg shadow-md object-cover w-full h-auto"
                     />
-                    {/* {imageObj.caption && (
-                      <p className="text-sm text-gray-600 mt-2 text-center">
-                        {imageObj.caption}
-                      </p>
-                    )} */}
                   </div>
                 );
               })}

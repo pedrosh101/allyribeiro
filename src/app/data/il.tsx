@@ -90,7 +90,7 @@ export const illustrations = [
       },
     ],
   },
-
+  
   {
     id: 6,
     title: "12 Days of Creepmas",
@@ -199,8 +199,8 @@ export const illustrations = [
     slug: "sessao-da-meia-noite",
     caminho: "/work/ILU8/1.jpg",
     texto:
-      "História em quadrinhos de onze páginas sobre celebrar bons momentos com amigos. Publicada no Halloween de 2024 no Substack ([Sessão da Meia-Noite no Substack](https://lettersfromthehauntedforest.substack.com/p/sessao-da-meia-noite-midnight-session)). Desenhada, colorida, escrita e editada por mim utilizando o software Procreate.\nRetratadas aqui: páginas 3, 4, 7 e 11 (de 11).",
-    text: "Eleven page comic about celebrating good times with friends. Published on Halloween 2024 on Substack ([Sessão da Meia-Noite no Substack](https://lettersfromthehauntedforest.substack.com/p/sessao-da-meia-noite-midnight-session)). Drawn, colored, written and edited by me using Procreate.\nFeatured here: pages 3, 4, 7 and 11 (of 11).",
+      "História em quadrinhos de onze páginas sobre celebrar bons momentos com amigos. Publicada no Halloween de 2024 no Substack. Desenhada, colorida, escrita e editada por mim utilizando o software Procreate.\nRetratadas aqui: páginas 3, 4, 7 e 11 (de 11).",
+    text: "Eleven page comic about celebrating good times with friends. Published on Halloween 2024 on Substack. Drawn, colored, written and edited by me using Procreate.\nFeatured here: pages 3, 4, 7 and 11 (of 11).",
     category: "Comics",
     gallery: [
       {
@@ -227,8 +227,8 @@ export const illustrations = [
     slug: "the-lady-from-the-black-lagoon",
     caminho: "/work/ILU11/1.jpg",
     texto:
-      "Sou fã dos filmes de monstros da Universal há muito tempo. Quando descobri a história de Milicent Patrick e a maneira como ela quase foi apagada da história de Hollywood, embora tenha criado um dos designs de monstros mais icônicos de todos os tempos, soube que queria prestar homenagem a essa artista incrível com uma ilustração.\nUma print desta arte foi sorteada em parceria com a editora Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) através do meu perfil do Instagram no Halloween de 2022.\nPintura digital feita no Procreate.",
-    text: "I've been a fan of the Universal monster movies for most of my life. When I learned about Milicent Patrick's story and the way she was almost erased from Hollywood history although she had created one of the most iconic monster designs of all time, I knew I wanted to pay homage to this amazing artist with an illustration.\nA print of this artwork was raffled in partnership with publisher Darkside Books ([post sorteio Darkside](https://www.instagram.com/p/Cj8JWm4Iam2/?img_index=1)) through my Instagram profile on Halloween 2022.\nDigital painting made in Procreate.",
+      "Sou fã dos filmes de monstros da Universal há muito tempo. Quando descobri a história de Milicent Patrick e a maneira como ela quase foi apagada da história de Hollywood, embora tenha criado um dos designs de monstros mais icônicos de todos os tempos, soube que queria prestar homenagem a essa artista incrível com uma ilustração.\nUma print desta arte foi sorteada em parceria com a editora Darkside Books através do meu perfil do Instagram no Halloween de 2022.\nPintura digital feita no Procreate.",
+    text: "I've been a fan of the Universal monster movies for most of my life. When I learned about Milicent Patrick's story and the way she was almost erased from Hollywood history although she had created one of the most iconic monster designs of all time, I knew I wanted to pay homage to this amazing artist with an illustration.\nA print of this artwork was raffled in partnership with publisher Darkside Books through my Instagram profile on Halloween 2022.\nDigital painting made in Procreate.",
     category: "Illustration",
     gallery: [
       { src: "/work/ILU11/1.jpg", caption: "Lady from the Black Lagoon" },

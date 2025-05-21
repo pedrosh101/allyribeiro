@@ -180,11 +180,11 @@ export const illustrations = [
     category: "Illustration",
     gallery: [
       {
-        src: "/work/ILU13/1.jpg",
+        src: "/work/ILU13/2.jpg",
         caption: "",
       },
       {
-        src: "/work/ILU13/2.jpg",
+        src: "/work/ILU13/1.jpg",
         caption: "",
       },
       {

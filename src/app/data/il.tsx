@@ -173,7 +173,7 @@ export const illustrations = [
     id: 13,
     title: "Lendo Terror - Postcards",
     slug: "lendo-terror",
-    caminho: "/work/ILU13/1.jpg",
+    caminho: "/work/ILU13/2.jpg",
     texto:
       "Série de cartões postais criada para o Lendo Terror - Porta Secreta (link projeto LT no Catarse), um projeto em andamento no Catarse criado por Jéssica Louise Werner. A cada mês de 2025, os membros deste clube literário de terror receberão cartões postais com fantasmas em diferentes situações.\nRetratados aqui: cartões postais de abril, fevereiro e maio. Pinturas digitais feitas no Procreate.",
     text: "Series of postcards created for Lendo Terror - Porta Secreta, an ongoing Catarse project created by Jéssica Louise Werner. For every month of 2025, the members of this horror literary club will receive postcards featuring ghosts in different situations.\nFeatured here: April, February and May postcards. Digital paintings made in Procreate.",
